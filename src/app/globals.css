@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #fafaf9;
+  --color-card: #ffffff;
+  --color-text: #1c1917;
+  --color-text-secondary: #78716c;
+  --color-border: #e7e5e4;
+  --color-accent: #3b82f6;
+  --color-accent-light: #eff6ff;
+  --color-tag-bg: #f5f5f4;
+  --color-tag-active-bg: #1c1917;
+  --color-tag-active-text: #fafaf9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0c0a09;
+    --color-card: #1c1917;
+    --color-text: #fafaf9;
+    --color-text-secondary: #a8a29e;
+    --color-border: #292524;
+    --color-accent: #60a5fa;
+    --color-accent-light: #172554;
+    --color-tag-bg: #292524;
+    --color-tag-active-bg: #fafaf9;
+    --color-tag-active-text: #1c1917;
+  }
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* Markdown 渲染样式 */
+.prose-custom { line-height: 1.75; font-size: 0.9375rem; }
+.prose-custom h1 { font-size: 1.5rem; font-weight: 700; margin: 1.5rem 0 0.75rem; }
+.prose-custom h2 { font-size: 1.25rem; font-weight: 600; margin: 1.25rem 0 0.5rem; }
+.prose-custom h3 { font-size: 1.1rem; font-weight: 600; margin: 1rem 0 0.5rem; }
+.prose-custom p { margin: 0.75rem 0; }
+.prose-custom a { color: var(--color-accent); text-decoration: underline; }
+.prose-custom ul, .prose-custom ol { margin: 0.75rem 0; padding-left: 1.5rem; }
+.prose-custom li { margin: 0.25rem 0; }
+.prose-custom ul { list-style-type: disc; }
+.prose-custom ol { list-style-type: decimal; }
+.prose-custom blockquote {
+  border-left: 3px solid var(--color-accent);
+  padding: 0.25rem 1rem;
+  color: var(--color-text-secondary);
+  margin: 1rem 0;
+}
+.prose-custom code {
+  background: var(--color-tag-bg);
+  border-radius: 0.25rem;
+  padding: 0.1em 0.4em;
+  font-family: ui-monospace, "SFMono-Regular", monospace;
+  font-size: 0.875em;
+}
+.prose-custom pre {
+  background: var(--color-tag-bg);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+.prose-custom pre code {
+  background: transparent;
+  padding: 0;
+}
+.prose-custom hr { border-color: var(--color-border); margin: 1.5rem 0; }
+.prose-custom table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+.prose-custom th, .prose-custom td {
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+.prose-custom th { background: var(--color-tag-bg); font-weight: 600; }
