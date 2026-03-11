@@ -21,6 +21,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  // 排除 API 路由、Next.js 内部路径、静态资源
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
+  matcher: ["/((?!api|_next/static|_next/image|favicon.ico|.*\\..*).*)"],
 };
