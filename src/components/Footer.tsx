@@ -47,6 +47,18 @@ export default function Footer() {
       <div className="mx-auto flex w-2/3 items-center justify-between gap-8 px-4 sm:px-6">
         <nav className="flex items-center gap-8">
           <Link
+            href={`/${locale}/devlog`}
+            className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-text)]"
+          >
+            {t("footer.devlog")}
+          </Link>
+          <Link
+            href={`/${locale}/thoughts`}
+            className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-text)]"
+          >
+            {t("footer.thoughts")}
+          </Link>
+          <Link
             href={`/${locale}/about`}
             className="text-sm text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-text)]"
           >
