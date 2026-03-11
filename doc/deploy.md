@@ -1,7 +1,5 @@
 # PieckyWD 部署指南
 
-线上地址：https://pieckywd-site.ghosting0942.workers.dev
-
 ## 一键部署
 
 ```bash
